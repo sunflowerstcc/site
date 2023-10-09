@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunflowers</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+    <style>
+      #mapid {
+        margin: auto;
+        margin-top: 30px;
+        height: 450px;
+        border-radius: 20px;
+        width: 80%;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <button class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </button>
+        <ul id="menu" class="ul-menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre nós</a></li>
+
+          <li><a href="#">Comunidade</a></li>
+          <li><a href="#">Central de ajuda</a></li>
+        </ul>
+      </div>
+
+      <div class="sunflowers">
+        <h1>Sunflowers</h1>
+      </div>
+
+      <!-- sobre nós -->
+
+      <div class="sobrenos">
+        <div class="textosnos">
+          <h1>Sobre Nós</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            quibusdam mollitia nobis debitis iusto inventore natus iure aperiam
+            eum nulla repellat, provident eligendi placeat voluptatum blanditiis
+            quaerat odio corrupti alias.
+          </p>
+        </div>
+        <img class="imgsobrenos" src="IMG/image 15.svg" alt="" />
+      </div>
+
+      <div class="gps">
+        <div class="textgps">
+          <h1>Encontre lugares acessivéis em Riberão Pires</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt vero
+            suscipit iste quos eligendi maxime blanditiis soluta perferendis
+            nemo, magni atque voluptatum molestias necessitatibus ipsam facilis.
+            Ad corporis dolorum quasi.
+          </p>
+        </div>
+        <div id="mapid"></div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>
