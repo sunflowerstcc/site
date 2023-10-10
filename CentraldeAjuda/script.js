@@ -1,6 +1,7 @@
 //
-
+const denuncia_id = document.getElementById('denuncia_id')
 function clickMenu() {
+  console.log('ola')
   if (denuncia_id.onclick != null) {
     let ate = document.getElementById("ate-1");
     let tela = document.getElementById("denuncia");
