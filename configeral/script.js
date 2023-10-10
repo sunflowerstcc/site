@@ -56,4 +56,8 @@ if(menuopicao.style.display == 'block'){
 }
 }
 
+
+const voltar = ()=>{
+  window.history.back()
+}
 /* fim */

@@ -59,7 +59,7 @@ body.dark .conf a {
 
 body.dark .bordaheaderfim {
   border-bottom: 1px #000000 solid;
-  width: calc(100vw - 70px);
+  width: calc(100vw - 87px);
 }
 
 body.dark menu {
@@ -195,7 +195,7 @@ header .nome {
 
 .bordaheaderfim {
   border-bottom: 1px #fff solid;
-  width: calc(100vw - 70px);
+  width: calc(100vw - 87px);
 }
 
 menu {

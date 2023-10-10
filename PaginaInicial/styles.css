@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: #1a1d24;
+}
+
+body {
+  background-image: url(IMG/Fundo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header li {
+  display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.header a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 46px;
+  font-family: "Lilita One", cursive;
+  color: #ffffff;
+}
+
+.header a:hover {
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 46px;
+  font-family: "Lilita One", cursive;
+  color: #a5a5a5;
+}
+
+.sunflowers {
+  margin-top: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunflowers h1 {
+  font-family: "Lilita One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 108px;
+  line-height: 146px;
+  color: #ffffff;
+}
+
+/* sobre nós */
+
+.sobrenos {
+  margin-top: 200px;
+  background-color: #1a1d24;
+  color: #ffffff;
+  display: flex;
+}
+
+.textosnos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  margin-left: 100px;
+}
+
+.textosnos h1 {
+  color: #fff;
+  font-family: "Lilita One", cursive;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.textosnos p {
+  width: 350px;
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.imgsobrenos {
+  margin-left: 300px;
+  padding-top: 200px;
+}
+
+/* gps */
+
+.gps {
+  background: #242b3a;
+}
+
+.textgps {
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.textgps h1 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Lilita One", cursive;
+}
+
+.textgps p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Kanit", sans-serif;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    position: relative;
+  }
+  .header ul {
+    display: block;
+  }
+  .header .ul-menu {
+    transform: translateY(-500%);
+    transition: 0.2s ease-in-out;
+  }
+  .header .active-menu {
+    transform: translateY(0);
+    transition: 0.2s ease-in-out;
+  }
+  .sobrenos {
+    display: block;
+  }
+  .textosnos {
+    padding-top: 30px;
+    width: 80%;
+    margin: 10%;
+  }
+  .textosnos p {
+    width: 100%;
+  }
+  .imgsobrenos {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+  }
+  /*menu*/
+  .mobile-menu {
+    display: block;
+    overflow: hidden;
+    background: none;
+    border: none;
+  }
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.2s ease-in-out;
+  }
+  .mobile-menu .remove {
+    transform: translateX(-200%);
+  }
+  .mobile-menu .rotate1 {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .mobile-menu .rotate3 {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}

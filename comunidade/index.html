@@ -35,6 +35,12 @@
 </head>
 
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
     <header>
         <h1>PÁGINA INICIAL</h1>
         
@@ -89,11 +95,24 @@
 
     <menu>
         <div class="navbar">
+            <a href="../PaginaInicial/index.html">
+
             <img src="IMG/Logo.svg" alt="">
-            <img src="IMG/home.svg" alt="" />
-            <img src="IMG/notifications_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
-            <img src="IMG/settings_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
-            <img src="IMG/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
+        </a>
+
+            <a href="../PaginaInicial/index.html">
+
+                <img src="IMG/home.svg" alt="" />
+            </a>
+            <div style="opacity:0;">
+
+                <img src="IMG/notifications_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
+            </div>
+           <a href="../configeral/index.html"> <img  src="IMG/settings_FILL0_wght400_GRAD0_opsz48.svg" alt="" /></a>
+           <a href="../perfil/index.html">
+
+               <img src="IMG/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
+           </a>
             <img src="IMG/edit_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
 
 
@@ -114,6 +133,10 @@
 
     <!-- js -->
     <script src="script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>

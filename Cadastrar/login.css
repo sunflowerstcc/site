@@ -6,7 +6,7 @@
   list-style: none;
 }
 
-body{
+body {
   background-image: url(IMG/cadastro\ \(2\).svg);
   background-repeat: no-repeat;
   width: 100vw;
@@ -28,7 +28,7 @@ body{
   border-radius: 37px;
   position: absolute;
   left: 60%;
-  top: 30px;
+  margin-top: 60px;
 }
 
 .bordas {
@@ -70,7 +70,7 @@ body{
   outline: none;
   font-size: 13px;
   padding-top: 5px;
-  
+
   margin-bottom: 15px;
   width: 240px;
 }
@@ -87,7 +87,7 @@ body{
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   line-height: 22.5px;
- border-bottom: 1px rgb(0, 0, 0) solid; 
+  border-bottom: 1px rgb(0, 0, 0) solid;
   margin-left: -120px;
   color: rgb(0, 0, 0);
 }
@@ -139,6 +139,7 @@ body{
   display: flex;
   flex-direction: column;
 }
+
 .img_logo {
   display: flex;
 }
@@ -169,6 +170,7 @@ body{
   font-weight: 400;
   margin-left: 10px;
 }
+
 .nao_cadastro a:hover {
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -177,12 +179,11 @@ body{
   border-bottom: 1px black solid;
 }
 
-  /* Media Queries */
+/* Media Queries */
 
-  @media (max-width: 700px) { 
-    .container{
-      left: 50%;
-      transform: translate(-50%);
-    }
-   }
-  
+@media (max-width: 700px) {
+  .container {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

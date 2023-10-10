@@ -22,22 +22,30 @@
 </head>
 
 <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
   <header>
-    <span id="seta" class="material-symbols-outlined" onclick="voltar">
+    <span  id="seta" class="material-symbols-outlined" onclick="voltar()">
       arrow_back
     </span>
 
-    <h1>Confiurações</h1>
+    <h1>Configurações</h1>
 
-    <a href="#">Salvar</a>
+    <a class="salvar" href="#">Salvar</a>
   </header>
 
-
+<div class="bordaheader">
+  
+</div>
 
   <main>
-    <span id="menuopcao" class="material-symbols-outlined" onclick="menuOpicao()">
-      menu
-      </span>
+   <img src="img/menu.png" alt="" id="menuopcao" class="menunavbar"   onclick="menuOpicao()">
+      
+     
     <div id="optionid" class="option">
       <div class="telabutton" onclick="clickTela()">
         <p> Tela
@@ -91,9 +99,7 @@
           </label>
         </div>
 
-        <div class="ativadoounao">
-          <p>Desativado</p>
-        </div>
+       
 
         <div class="borda3">
         </div>
@@ -122,7 +128,10 @@
 
   <!-- script -->
   <script src="script.js"></script>
-
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
 </body>
 
