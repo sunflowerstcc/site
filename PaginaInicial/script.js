@@ -1,11 +1,11 @@
-var map = L.map('mapid').setView([51.505, -0.09], 13);
+var map = L.map('mapid').setView([-23.70785156682547, -46.41527369126889], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('London.')
+    .bindPopup('Ribeirão Pires.')
     .openPopup();
 
 // menu
