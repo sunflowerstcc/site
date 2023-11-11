@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A1D24;
+    color: #fff;
+
+}
+
+.header {
+    border-bottom: 2px solid #fff;
+    height: 100px;
+}
+
+.header>ul {
+    height: 100px;
+    gap: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>ul>li {
+    font-size: 30px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.header>ul>li:hover{
+    color: silver;
+}
+
+.textSection{
+    margin-top: 20px;
+}
+
+.textSection h1{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.escolhaemapa{
+    display: flex;
+}
+
+.escolha{
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+select{
+    background: none;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 180px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+select > option{
+    color: black;
+    background-color: silver;
+}
+
+/* mapa */
+#mapid {
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: 100px;
+    height: 450px;
+    border-radius: 20px;
+    width: 60%;
+}
+
